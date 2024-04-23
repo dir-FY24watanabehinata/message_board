@@ -38,6 +38,12 @@ public class IndexServlet extends HttpServlet {
 		response.getWriter().append(Integer.valueOf(messages.size()).toString());
 		
 		em.close();
+		
+    request.setAttribute("messages", messages);
+
+		    var rd = request.getRequestDispatcher("/WEB-INF/views/messages/index.jsp");
+		    rd.forward(request, response);
+
 
 }
 }
