@@ -3,7 +3,6 @@ package controllers;
 import java.io.IOException;
 import java.util.List;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
